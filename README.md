@@ -1,4 +1,4 @@
-# P.A.D. Stat Tracker
+# Peripheral Arterial Disease Stat Tracker
 A responsive web app aiding clinicians in a Mayo Clinic health study.  
 Built with React JavaScript, GraphQL, and Amazon Web Services ( Amplify, AppSync, DynamoDB ).
 
