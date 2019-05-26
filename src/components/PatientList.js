@@ -53,7 +53,7 @@ class PatientList extends Component {
                     switch (selection) {
                         case 'baseline':
                             // Pass patient id
-                            history.push(`/form/${this.state.id}/init`);
+                            history.push(`${process.env.PUBLIC_URL}/form/${this.state.id}/init`);
                             break;
                         case 'fourweek':
                             // Pass patient id
