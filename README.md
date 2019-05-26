@@ -1,4 +1,4 @@
-# Peripheral Arterial Disease Stat Tracker
+# Peripheral Arterial Disease Data Tracker
 A responsive web app aiding clinicians in a Mayo Clinic health study.  
 Built with React JavaScript, GraphQL, and Amazon Web Services ( Amplify, AppSync, DynamoDB ).
 
