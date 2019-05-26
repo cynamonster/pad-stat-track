@@ -12,3 +12,4 @@ This application was created by Ben Cynamon to assist the research project, *Sta
 * ~Wrap app in authentication layer~
 * Connect EXPORT CSV button 
 * Integrate GraphQL subscriptions to PatientList.js
+* Alphabetize response items in PatientList.js
