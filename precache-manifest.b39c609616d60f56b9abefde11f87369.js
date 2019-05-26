@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "82937839ba590dd606ae",
+    "revision": "0f1313164b588abf7ed4",
     "url": "/pad-stat-track/static/css/main.177a2c54.chunk.css"
   },
   {
-    "revision": "82937839ba590dd606ae",
-    "url": "/pad-stat-track/static/js/main.fac7ef43.chunk.js"
+    "revision": "0f1313164b588abf7ed4",
+    "url": "/pad-stat-track/static/js/main.0585be87.chunk.js"
   },
   {
     "revision": "5306904edbd31ae3c580",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/pad-stat-track/static/js/2.6d694889.chunk.js"
   },
   {
-    "revision": "5ed4ffbd1424046a81c4264eac3482ae",
+    "revision": "a68846d385e7bc1c32f831f1f85b58b1",
     "url": "/pad-stat-track/index.html"
   }
 ];
