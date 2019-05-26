@@ -1,0 +1,20 @@
+/*
+    white: #f9f7f7
+    light-blue: #dbe2ef
+    blue: #3f72af
+    dark-blue: #112d4e
+    red: #BD6057
+*/
+
+.form-input label {
+    color: #112d4e !important;
+}
+
+input {
+    /* background: #dbe2ef !important; */
+    color: #112d4e !important;
+}
+
+body {
+    background: #9dc8fa;
+}

@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import settings from './aws-exports';
+import Amplify from 'aws-amplify';
+// import { withAuthenticator } from 'aws-amplify-react';
+// import { listPatientsQuery } from './graphql/queries';
+import { Router, Route } from 'react-router-dom';
+import history from './history';
+
+// components
+import PatientList from './components/PatientList';
+import PatientForm from './components/PatientForm';
+// import CreateMeasurement from './components/CreateMeasurement';
+import CreatePatient from './components/CreatePatient';
+import RemovePatient from './components/RemovePatient';
+// import { SignUp } from 'aws-amplify-react/dist/Auth';
+
+
+Amplify.configure(settings);
 
 class App extends Component {
+  state = {
+    activePatient: {},
+    activeMeasurement: {}
+  }
+
   render() {
+    console.log() 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router history={history}>
+        <div className="App">
+          {/* <Route path="/" exact component={Authenticate} /> */}
+          <Route path="/" exact component={PatientList} />
+          <Route path="/form/:id/:type" component={PatientForm} />
+          <Route path="/create" component={CreatePatient} />
+          <Route path="/remove" component={RemovePatient} />
+        </div>
+      </Router>
     );
   }
 }
 
+// export default withAuthenticator(App, { includeGreetings: true });
 export default App;

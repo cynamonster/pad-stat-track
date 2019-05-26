@@ -1,0 +1,13 @@
+.swal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.swal-button {
+    width: 20rem;
+    height: 4rem;
+}
+.swal-modal {
+    width: inherit;
+}

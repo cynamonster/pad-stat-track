@@ -1,0 +1,26 @@
+type Patient @model {
+  id: ID!
+  anonId: String!
+  measurements: [Measurement!]! @connection(name: "PatientMeasurements")
+}
+
+enum MeasurementType {
+  Initial
+  FourWeek
+}
+
+type Measurement @model {
+  id: ID!
+  type: MeasurementType!
+  patient: Patient! @connection(name: "PatientMeasurements")
+  date: String
+  abi_before: String
+  abi_after: String
+  nirs_before: String
+  nirs_after: String
+  endo_de: String
+  endo_in: String
+  nirs_gastroc_before: String
+  nirs_gastroc_after: String
+  notes: String
+}

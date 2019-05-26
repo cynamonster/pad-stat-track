@@ -1,0 +1,14 @@
+{
+    "periartenv": {
+        "awscloudformation": {
+            "AuthRoleName": "periart-periartenv-20190516184126-authRole",
+            "UnauthRoleArn": "arn:aws:iam::026238163631:role/periart-periartenv-20190516184126-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::026238163631:role/periart-periartenv-20190516184126-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "periart-periartenv-20190516184126-deployment",
+            "UnauthRoleName": "periart-periartenv-20190516184126-unauthRole",
+            "StackName": "periart-periartenv-20190516184126",
+            "StackId": "arn:aws:cloudformation:us-east-1:026238163631:stack/periart-periartenv-20190516184126/bda89660-782b-11e9-8361-12eea7535b9e"
+        }
+    }
+}
