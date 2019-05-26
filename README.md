@@ -1,6 +1,6 @@
 # P.A.D. Stat Tracker
-### A web app aiding clinicians in a Mayo Clinic health study.
-### Built with React JavaScript, GraphQL, and Amazon Web Services[ DynamoDB, Amplify, AppSync ]
+#### A web app aiding clinicians in a Mayo Clinic health study.
+#### Built with React JavaScript, GraphQL, and Amazon Web Services[ DynamoDB, Amplify, AppSync ]
 
 ![gif](pad-stat.gif "gif")
 
