@@ -114,7 +114,7 @@ class RemovePatient extends Component {
                 <div className="ui">
                     <div className="ui header" style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                         
-                        <Link to="/" className="ui button large"><i className="icon chevron left" />Return to List</Link>
+                        <Link to="/pad-stat-track/" className="ui button large"><i className="icon chevron left" />Return to List</Link>
 
                         <h2 style={{margin: 0}}>Delete a Patient</h2>
 

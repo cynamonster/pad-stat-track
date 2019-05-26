@@ -220,7 +220,7 @@ class PatientForm extends Component {
         }
         return (
             <Fragment>
-                <Link to="/" className="ui button"><i className="icon chevron left" />Return to List</Link>
+                <Link to="/pad-stat-track/" className="ui button"><i className="icon chevron left" />Return to List</Link>
                 <div className="ui small center aligned header" style={{ margin: 0 }} >
                     Patient: { this.getAnonId() }
                 </div>

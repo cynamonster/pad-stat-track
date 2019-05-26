@@ -123,9 +123,9 @@ class PatientList extends Component {
 
                     <div className="ui header" style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
 
-                        <Link to="/remove" className="ui button large red"><i className="icon minus circle" />Remove Patient</Link>
+                        <Link to="/pad-stat-track/remove" className="ui button large red"><i className="icon minus circle" />Remove Patient</Link>
 
-                        <Link to="/create" className="ui button large primary"><i className="icon plus circle" />Add Patient</Link>
+                        <Link to="/pad-stat-track/create" className="ui button large primary"><i className="icon plus circle" />Add Patient</Link>
 
                     </div>
                 </div>
