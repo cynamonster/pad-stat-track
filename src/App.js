@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     console.log() 
     return (
-      <Router history={history} basename={process.env.PUBLIC_URL}>
+      <Router history={history} path={process.env.PUBLIC_URL + '/'}>
         <div className="App">
           {/* <Route path="/" exact component={Authenticate} /> */}
           <Route path="/" exact component={PatientList} />
