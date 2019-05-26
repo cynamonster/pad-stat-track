@@ -1,0 +1,73 @@
+{
+    "identityPoolName": "pad_id_pool",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "pad_lambda_log_policy",
+    "openIdLambdaRoleName": "pad_openid_lambda_role",
+    "openIdRolePolicy": "pad_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "pad_openid_lambda_iam_policy",
+    "openIdLogPolicy": "pad_openid_lambda_log_policy",
+    "userPoolName": "pad_user_pool",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "pad_sns-role",
+    "roleExternalId": "pad_role_external_id",
+    "policyName": "pad-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": "6",
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "pad_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "pad_totp_lambda_role",
+    "mfaLambdaLogPolicy": "pad_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "pad_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "pad_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "pad_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "pad_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "pad_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "pad",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+        "email"
+    ],
+    "hostedUI": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}

@@ -9,6 +9,11 @@
             "UnauthRoleName": "periart-periartenv-20190516184126-unauthRole",
             "StackName": "periart-periartenv-20190516184126",
             "StackId": "arn:aws:cloudformation:us-east-1:026238163631:stack/periart-periartenv-20190516184126/bda89660-782b-11e9-8361-12eea7535b9e"
+        },
+        "categories": {
+            "auth": {
+                "pad": {}
+            }
         }
     }
 }

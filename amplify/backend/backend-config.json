@@ -8,5 +8,10 @@
 			}
 		}
 	},
-	"auth": {}
+	"auth": {
+		"pad": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }

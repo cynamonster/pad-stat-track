@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { listPatients } from '../graphql/queries';
 import { API, graphqlOperation } from 'aws-amplify';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
 // import { Redirect, Route, Link, Switch, withRouter } from 'react-router-dom';
 // import PatientForm from './PatientForm';

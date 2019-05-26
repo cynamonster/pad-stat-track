@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import settings from './aws-exports';
-import Amplify from 'aws-amplify';
-// import { withAuthenticator } from 'aws-amplify-react';
-// import { listPatientsQuery } from './graphql/queries';
 import { Router, Route } from 'react-router-dom';
 import history from './history';
 
 // components
 import PatientList from './components/PatientList';
 import PatientForm from './components/PatientForm';
-// import CreateMeasurement from './components/CreateMeasurement';
 import CreatePatient from './components/CreatePatient';
 import RemovePatient from './components/RemovePatient';
-// import { SignUp } from 'aws-amplify-react/dist/Auth';
 
-
-Amplify.configure(settings);
+// Amplify, Auth
+import Amplify from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react';
+import aws_exports from './aws-exports';
+Amplify.configure(aws_exports);
 
 class App extends Component {
   state = {
@@ -40,5 +37,5 @@ class App extends Component {
   }
 }
 
-// export default withAuthenticator(App, { includeGreetings: true });
-export default App;
+export default withAuthenticator(App, { includeGreetings: true });
+// export default App;
