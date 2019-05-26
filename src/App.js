@@ -27,13 +27,13 @@ class App extends Component {
   render() {
     console.log() 
     return (
-      <Router history={history} path={process.env.PUBLIC_URL + '/'}>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
         <div className="App">
           {/* <Route path="/" exact component={Authenticate} /> */}
-          <Route path="/" exact component={PatientList} />
-          <Route path="/form/:id/:type" component={PatientForm} />
-          <Route path="/create" component={CreatePatient} />
-          <Route path="/remove" component={RemovePatient} />
+          <Route path={process.env.PUBLIC_URL + "/"} exact component={PatientList} />
+          <Route path={process.env.PUBLIC_URL + "/form/:id/:type"} component={PatientForm} />
+          <Route path={process.env.PUBLIC_URL + "/create"} component={CreatePatient} />
+          <Route path={process.env.PUBLIC_URL + "/remove"} component={RemovePatient} />
         </div>
       </Router>
     );
