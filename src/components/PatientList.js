@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { listPatients } from '../graphql/queries';
 import { API, graphqlOperation } from 'aws-amplify';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import swal from 'sweetalert';
 // import { Redirect, Route, Link, Switch, withRouter } from 'react-router-dom';
 // import PatientForm from './PatientForm';
@@ -53,11 +53,11 @@ class PatientList extends Component {
                     switch (selection) {
                         case 'baseline':
                             // Pass patient id
-                            history.push(`${process.env.PUBLIC_URL}/form/${this.state.id}/init`);
+                            history.push(`/pad-stat-track/form/${this.state.id}/init`);
                             break;
                         case 'fourweek':
                             // Pass patient id
-                            history.push(`/form/${this.state.id}/four`);
+                            history.push(`/pad-stat-track/form/${this.state.id}/four`);
                             break;
                         case 'csv':
                             // export emailable/downloadable .csv of database

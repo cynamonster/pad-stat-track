@@ -30,10 +30,10 @@ class App extends Component {
       <Router history={history}>
         <div className="App">
           {/* <Route path="/" exact component={Authenticate} /> */}
-          <Route path={process.env.PUBLIC_URL + '/'} exact component={PatientList} />
-          <Route path={process.env.PUBLIC_URL + '/form/:id/:type'} component={PatientForm} />
-          <Route path={process.env.PUBLIC_URL + '/create'} component={CreatePatient} />
-          <Route path={process.env.PUBLIC_URL + '/remove'} component={RemovePatient} />
+          <Route path={'/pad-stat-track/'} exact component={PatientList} />
+          <Route path={'/pad-stat-track/form/:id/:type'} component={PatientForm} />
+          <Route path={'/pad-stat-track/create'} component={CreatePatient} />
+          <Route path={'/pad-stat-track/remove'} component={RemovePatient} />
         </div>
       </Router>
     );

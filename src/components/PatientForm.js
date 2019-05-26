@@ -148,7 +148,7 @@ class PatientForm extends Component {
                 console.log('err:',err);
             });
 
-            history.push('/');
+            history.push('/pad-stat-track/');
         } else {
             API.graphql(graphqlOperation(createMeasurement, {
                 input: {
@@ -171,7 +171,7 @@ class PatientForm extends Component {
                 console.log('err(create):',err);
             });
 
-            history.push('/');
+            history.push('/pad-stat-track/');
         }
         }
 

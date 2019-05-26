@@ -68,7 +68,7 @@ class RemovePatient extends Component {
                     ).catch(
                         err => console.log('err',err)
                     )
-                    history.push('/')
+                    history.push('/pad-stat-track/')
                 }
             });
         });

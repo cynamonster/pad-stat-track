@@ -29,7 +29,7 @@ class CreatePatient extends Component {
             console.log(err);
         });
 
-        history.push('/');
+        history.push('/pad-stat-track/');
     }
      
     render() {
@@ -49,7 +49,7 @@ class CreatePatient extends Component {
                     <div className="row">
                         <div className="column">
                             <button 
-                                onClick={ () => history.push('/') } 
+                                onClick={ () => history.push('/pad-stat-track/') } 
                                 className="ui button huge"
                             >
                                 Discard
