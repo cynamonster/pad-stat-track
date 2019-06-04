@@ -10,7 +10,7 @@ This application was created by Ben Cynamon to assist the research study, *Stati
 
 ![](pad-mocks.png)
 
-How does it work?
+### How does it work?
 
 ![](aws-diagram.png "Helpful depiction of the app's stack")
 
