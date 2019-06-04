@@ -12,7 +12,7 @@ This application was created by Ben Cynamon to assist the research study, *Stati
 
 How does it work?
 
-![Helpful depiction of the app's stack](aws-diagram.png)
+![](aws-diagram.png "Helpful depiction of the app's stack")
 
 ## To Do:
 * ~Wrap app in authentication layer~
