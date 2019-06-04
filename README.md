@@ -8,7 +8,7 @@ Built with React JavaScript, GraphQL, and Amazon Web Services ( Amplify, AppSync
 
 This application was created by Ben Cynamon to assist the research study, *Static Stretching for the Treatment of Peripheral Arterial Disease*, lead by Dr. Emily Pritchard of Florida State University's College of Medicine.
 
-[](pad-mocks.png)
+!(pad-mocks.png)
 
 ## To Do:
 * ~Wrap app in authentication layer~
