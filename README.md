@@ -10,7 +10,9 @@ This application was created by Ben Cynamon to assist the research study, *Stati
 
 ![](pad-mocks.png)
 
-![](aws-diagram.png)
+How does it work?
+
+![Helpful depiction of the app's stack](aws-diagram.png)
 
 ## To Do:
 * ~Wrap app in authentication layer~
