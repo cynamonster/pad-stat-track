@@ -10,6 +10,8 @@ This application was created by Ben Cynamon to assist the research study, *Stati
 
 ![](pad-mocks.png)
 
+![](aws-diagram.png)
+
 ## To Do:
 * ~Wrap app in authentication layer~
 * Connect EXPORT CSV button 
