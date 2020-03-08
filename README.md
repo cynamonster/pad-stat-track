@@ -29,9 +29,3 @@ This application was created by Ben Cynamon to assist the research study, *Stati
 ### How does it work?
 
 ![](aws-diagram.png "Helpful depiction of the app's stack")
-
-## To Do:
-* ~Wrap app in authentication layer~
-* Connect EXPORT CSV button 
-* Integrate GraphQL subscriptions to PatientList.js
-* Alphabetize response items in PatientList.js
